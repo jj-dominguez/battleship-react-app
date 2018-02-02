@@ -1,0 +1,112 @@
+html{
+    text-align: center;
+    background-image: url('./background2.jpg');
+    background-size:fill;
+    background-position: center;
+    background-size:1800px;
+
+}
+
+body{
+    background-color: rgba(255,255,255, 0);
+}
+
+h1,h2,h4{
+    font-family:sans-serif;
+}
+
+#info{
+    background-color: rgba(255,255,255, .75);
+    position: relative;
+    top: 10px;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#resetButton{
+    position: relative;
+    top: 15px;
+    width: 25%;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: white;
+    background-color: teal;
+
+}
+
+#gameBoard{
+    margin: auto;
+}
+
+#torpedoes{
+    /* background-image: url('./wheel.png') */
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    position: relative;
+    cursor: url('./ship.png'), auto;
+}
+
+td{
+    border: black solid 2px;
+    margin: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+td:hover{
+    /* background-color: red; */
+    background-image: url('./crosshair2.png');
+    background-size:cover;
+    background-position:center;
+}
+
+td:active{
+    border-color: red;
+    background-color: black;
+    cursor: crosshair;
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+/* conditional CSS classes for state changes in the squares */
+.blank{
+    background-color: white;
+}
+
+.ship{
+    background-color: white;
+    /* background-color: red; */
+}
+
+.miss{
+    /* background-color: black; */
+    background-image: url('./ocean.jpg');
+    background-color: cyan;
+    background-size:cover;
+    background-position:center;
+}
+
+.hit{
+    /* background-color: green; */
+    background-image: url('./explosion.png');
+    background-size:cover;
+    background-position:center;
+    background-color: red;
+}
+
+.missedShip{
+    background-image: url('./ship.png');
+    background-size:cover;
+    background-position:center;
+    background-color: white;
+}
