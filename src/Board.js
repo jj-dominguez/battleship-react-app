@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Router } from 'react-router-dom';
 import "./App.css";
-import { Button, Col } from 'react-bootstrap';
 import Square from './Square.js';
 
 class Board extends Component {
@@ -50,19 +48,19 @@ class Board extends Component {
         for (var i = 0; i < 1; i++) {
                 this.placeBattleShip()
             }
-        for (var i = 0; i < 2; i++) {
+        for (i = 0; i < 2; i++) {
                 this.placeSubmarine();
             }
-        for (var i = 0; i < 2; i++) {
+        for (i = 0; i < 2; i++) {
                 this.placeDestroyer();
             }
-        for (var i = 0; i < 1; i++) {
+        for (i = 0; i < 1; i++) {
                 this.placePaddleboat();
             }
     }
 
     placeBattleShip(){
-        const { board, turns } = this.state
+        const { board} = this.state
 
         let placementY = Math.floor(Math.random() * 5)
         let placementX = Math.floor(Math.random() * 10)

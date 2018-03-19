@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Board from './Board';
 import "./App.css"
 import { Button } from 'react-bootstrap';
 
 class App extends Component {
-    constructor(props){
-        super(props)
-    }
-
     handleClick() {
         window.location.reload()
     }
