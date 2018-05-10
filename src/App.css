@@ -1,7 +1,7 @@
 html {
   text-align: center;
   margin: auto;
-  background-image: url('./background2.jpg');
+  background-image: url('/images/background2.jpg');
   background-size: fill;
   background-position: center;
   background-size: 1800px;
@@ -50,7 +50,7 @@ table {
   margin: auto;
   border-collapse: collapse;
   position: relative;
-  cursor: url('./ship.png'), auto;
+  cursor: url('/images/ship.png'), auto;
 }
 
 td {
@@ -62,7 +62,7 @@ td {
 
 td:hover {
   /* background-color: red; */
-  background-image: url('./crosshair2.png');
+  background-image: url('/images/crosshair2.png');
   background-size: cover;
   background-position: center;
 }
@@ -92,7 +92,7 @@ h1, h2 {
 
 .miss {
   /* background-color: black; */
-  background-image: url('./ocean.jpg');
+  background-image: url('/images/ocean.jpg');
   background-color: cyan;
   background-size: cover;
   background-position: center;
@@ -100,14 +100,14 @@ h1, h2 {
 
 .hit {
   /* background-color: green; */
-  background-image: url('./explosion.png');
+  background-image: url('/images/explosion.png');
   background-size: cover;
   background-position: center;
   background-color: red;
 }
 
 .missedShip {
-  background-image: url('./ship.png');
+  background-image: url('/images/ship.png');
   background-size: cover;
   background-position: center;
   background-color: white;
